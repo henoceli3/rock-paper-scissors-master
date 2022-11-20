@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body class="body">
+    <!-- la header box -->
+    <header class="header-box">
+        <div class="game-name-box">
+            <img src="images/logo.svg" alt="the_game_name">
+        </div>
+        <div class="score-box">
+            <p class="score_annoucement">SCORE</p>
+            <p class="score">0</p>
+        </div>
+    </header>
+    <!-- le jeux  -->
+    <div class="game-wrapper">
+        <button class="btn-paper" aria-label="Paper" id="btn-paper"></button>
+        <button class="btn-rock" aria-label="Rock" id="btn-rock"></button>
+        <button class="btn-scissors" aria-label="Scissors" id="btn-scissors"></button>
+    </div>
+    <!-- resultat du jeux  -->
+    <div class="result-wrapper" id="result-wrapper">
+        <div class="result-column result-column-1">
+            <h2 class="player-selection--label">YOU PICKED</h2>
+            <button class="player-selection--icon"></button>
+        </div>
+        <div class="result-column result-column-2">
+            <h2 class="game-result--label" id="game-result--label"></h2>
+            <button class="btn-play-again" id="btn-play-again">PLAY AGAIN</button>
+        </div>
+        <div class="result-column result-column-3">
+            <h2 class="cumputer-selection--label">HOUSE PICKED</h2>
+            <button class="cumpter-selection--icon"></button>
+        </div>
+    </div>
+    <!-- les regles -->
+    <div class="rules" id="rules">
+        <div class="rule--conatiner">
+            <div class="line-1-rule">
+                <h2>RULES</h2>
+                <img src="images/icon-close.svg" alt="close-rules" id="close-rules">
+            </div>
+            <img src="images/image-rules.svg" alt="rules">
+        </div>
+    </div>
+    <div class="rule_box">
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://www.twitter.com/henockodjo" target="_blank">KODJO</a>.
+        </div>
+        <div class="rule--reset--box">
+            <button id="open-rules">RULES</button>
+            <button id="reset">RESET</button>
+        </div>
+    </div>
+    <!-- le scripte javascript -->
+    <script src="scrptes/gameloqique.js"></script>
+    <script src="scrptes/rules_nodale.js"></script>
+    <script src ="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</body>
+</html>
