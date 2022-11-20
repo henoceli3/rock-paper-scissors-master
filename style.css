@@ -226,14 +226,23 @@ button {
 @media(max-width:768px){
     .rule_box{
         flex-direction: column-reverse;
-        height: 12vh;
+        height: auto;
     }
     .rule_box button{
         height: 2em;
         margin-right: 0em;
+        margin-bottom: .5em;
     }
     .attribution{
         margin-left: 0em;
+    }
+    .rule--reset--box{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
