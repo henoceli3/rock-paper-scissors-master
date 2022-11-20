@@ -80,8 +80,10 @@ button {
         margin-right: .5em;
     }
 }
-@media(max-width : 500px){
-    
+@media(max-width : 426px){
+    .header-box{
+        width: 80%;
+    }
 }
 .score_annoucement{
     color:hsl(229, 64%, 46%);
@@ -126,7 +128,7 @@ button {
         width: 70vh;
     }
 }
-@media(max-width:425px){
+@media(max-width:426px){
     .game-wrapper{
         width: 50vh;
         background-size: 60%;
